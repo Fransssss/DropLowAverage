@@ -17,6 +17,13 @@ int main()
     double average = 0;
     const double size = sizeof(data)/sizeof(double);
 
+    cout << "Here is the array data[] = { ";
+    for(size_t i = 0; i < size; ++i)
+    {
+        cout << data[i] << " ";
+    }
+    cout << '}' << endl;
+    
     low = data[0];
     for(size_t i = 0; i< size; ++i)
     {
@@ -25,6 +32,7 @@ int main()
             low = data[i];
         }
     }
+    
 
     for(size_t i = 0; i < size; ++i)
     {
